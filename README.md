@@ -64,4 +64,4 @@ Ratings Query
 
 ## Summary
 
-A JSON file and 2 Kaggle files were extracted, then transformed, and joined.  A movies and ratings file were loaded into a database for the hack-a-thon event.
+The hack-a-thon event was complete upon loading the movies and ratings data into tables in the movies database. The data that was extracted, transformed, and loaded was comprised of a JSON file and 2 Kaggle files.
