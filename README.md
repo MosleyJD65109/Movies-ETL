@@ -1,6 +1,5 @@
 # Movies-ETL
 
-# Movies-ETL
 Extract, Transform, Load
 
 ## Purpose
@@ -14,44 +13,57 @@ The project included extracting a large data set from Kaggle, then transforming 
 
 ## Extracting
 Wikipedia Movies JSON file, starting with 193 Columns:
-![Pic 1](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d1_1wiki_movies.PNG)
+
+![1PNG](https://user-images.githubusercontent.com/104540261/182287391-9da9968b-364a-49cf-9cad-66f9844cb1e5.png)
 
 Kaggle Movie Metadata, 24 columns
-![Pic 2](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d1_2kaggle_metadata.PNG)
+
+![2PNG](https://user-images.githubusercontent.com/104540261/182287431-127d94a1-beae-45c4-a06e-e2ca81daefd4.png)
 
 Kaggle Ratings data, 2602489 rows by 4 columns
 
-![Pic 3](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d1_3ratings.PNG)
+![3PNG](https://user-images.githubusercontent.com/104540261/182287506-f0dc2c3e-8118-472a-abb3-21ba187001bc.png)
+
 
 ## Transforming 
 ### Wikipedia Data
 Wikipedia Movies transformed, 22 columns
-![Pic 4](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d2_1wiki_movies.PNG)
+
+![4PNG](https://user-images.githubusercontent.com/104540261/182287539-2e4fb518-0b00-4816-a18f-11808731fea8.png)
+
 
 Wikipedia Movies, making the column names more succinct and uniform, 7033 rows of data.
-![Pic 5](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d2_2wiki_movie_counts.PNG)
+
+![5PNG](https://user-images.githubusercontent.com/104540261/182287573-c500026d-20d3-4d69-9b30-a18ef0172578.png)
 
 ### Kaggle Data
 Wikipedia Movies merged with Kaggle Movies data, all column names and row counts, 6052 rows.
-![Pic 8](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d3_6movies.PNG)
+
+
+![6PNG](https://user-images.githubusercontent.com/104540261/182287656-57d4d6f3-47a4-4b27-9bbb-a4b3ca426706.png)
 
 Merged Movies with Kaggle ratings, all of the column names and row counts, 6052 rows.
 
-![Pic 9](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d3_5movies_ratings.PNG)
+
+![7PNG](https://user-images.githubusercontent.com/104540261/182287809-6fb6d344-e212-4f0d-a06c-39f986f15aa1.png)
 
 ## Loading
 ### Creating the Movie Database
 Sending the data to PostgresSQL
-![Pic 10](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d4_final_send.PNG)
+
+![8PNG](https://user-images.githubusercontent.com/104540261/182287951-2cd1e424-44de-435b-bf22-637f340317e1.png)
+
 
 ### Verifying the data in PgAdmin
 Movies Query
 
-![Pic 11](https://github.com/Baylex/Movies-ETL/blob/main/Resources/movies_query.PNG)
+![movies_query](https://user-images.githubusercontent.com/104540261/182288002-a5b87cf1-9a35-4f13-a61c-157af90dd60e.png)
+
 
 Ratings Query
 
-![Pic 12](https://github.com/Baylex/Movies-ETL/blob/main/Resources/ratings_query.PNG)
+
+![ratings_query](https://user-images.githubusercontent.com/104540261/182288038-cab68d0a-5d07-4e66-b225-ed38c6072b24.png)
 
 ## Summary
 
