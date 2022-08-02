@@ -3,53 +3,50 @@
 Extract, Transform, Load
 
 ## Purpose
-1. Create an ETL pipeline from raw data to a SQL database.
-2. Extract data from disparate sources using Python.
-3. Clean and transform data using Pandas.
-4. Use regular expressions (Regex) to parse data and to transform text into numbers.
-5. Load data with PostgreSQL and verify in PgAdmin.
+The purpose of this challenge was to create an ETL pipeline from a raw data format into an SQL database. To do this required python script that would extract data from several different sources. After the data was extracted, it was then cleaned and transform using several different elements of the pandas library. Regular expressions were used to parse data and convert text into numbers. After the data was cleaned and transformed, it was then imported into a PostgreSQL table.
 
-The project included extracting a large data set from Kaggle, then transforming the data into a usable dataset for a "hacking competition."  Once the data was transformed and narrowed in scope for the hack-a-thon, the DataFrames were loaded into PostgresSQL.  
+
 
 ## Extracting
-Wikipedia Movies JSON file, starting with 193 Columns:
+Wikipedia Movies JSON file was extracted first
 
 ![1PNG](https://user-images.githubusercontent.com/104540261/182287391-9da9968b-364a-49cf-9cad-66f9844cb1e5.png)
 
-Kaggle Movie Metadata, 24 columns
+Kaggle Movie Metadata was extracted second
 
 ![2PNG](https://user-images.githubusercontent.com/104540261/182287431-127d94a1-beae-45c4-a06e-e2ca81daefd4.png)
 
-Kaggle Ratings data, 2602489 rows by 4 columns
+Kaggle Ratings data was extracted third
 
 ![3PNG](https://user-images.githubusercontent.com/104540261/182287506-f0dc2c3e-8118-472a-abb3-21ba187001bc.png)
 
 
 ## Transforming 
 ### Wikipedia Data
-Wikipedia Movies transformed, 22 columns
+Wikipedia Movies transformed
 
 ![4PNG](https://user-images.githubusercontent.com/104540261/182287539-2e4fb518-0b00-4816-a18f-11808731fea8.png)
 
 
-Wikipedia Movies, making the column names more succinct and uniform, 7033 rows of data.
+Wikipedia Movies was converted into a cleaner format
 
 ![5PNG](https://user-images.githubusercontent.com/104540261/182287573-c500026d-20d3-4d69-9b30-a18ef0172578.png)
 
 ### Kaggle Data
-Wikipedia Movies merged with Kaggle Movies data, all column names and row counts, 6052 rows.
+Wikipedia Movies were merged with Kaggle Movies data
 
 
 ![6PNG](https://user-images.githubusercontent.com/104540261/182287656-57d4d6f3-47a4-4b27-9bbb-a4b3ca426706.png)
 
-Merged Movies with Kaggle ratings, all of the column names and row counts, 6052 rows.
+Movies and kaggle ratings were merged together
 
 
 ![7PNG](https://user-images.githubusercontent.com/104540261/182287809-6fb6d344-e212-4f0d-a06c-39f986f15aa1.png)
 
 ## Loading
 ### Creating the Movie Database
-Sending the data to PostgresSQL
+
+Importing the data to the movies database
 
 ![8PNG](https://user-images.githubusercontent.com/104540261/182287951-2cd1e424-44de-435b-bf22-637f340317e1.png)
 
